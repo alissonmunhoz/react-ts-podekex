@@ -1,0 +1,36 @@
+.stats {
+  margin: 0.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    p {
+      color: #666666;
+      font-size: 14px;
+    }
+  }
+}
